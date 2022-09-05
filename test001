@@ -1,0 +1,18 @@
+from tkinter import *
+from PIL import Image, ImageTk
+
+raj02_root = Tk()
+raj02_root.geometry("1244x1044")
+# photo = PhotoImage(file="1.png")
+# to add photo save that photo in tkinter file project then only it will get accessed by code
+
+
+# for jpg file 
+image = Image.open("photos.jpg")
+photo = ImageTk.PhotoImage(image)
+
+# if using Label then use pack() function 
+ayu01_label = Label(image=photo)
+ayu01_label.pack()
+
+raj02_root.mainloop()
